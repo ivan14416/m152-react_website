@@ -1,0 +1,21 @@
+open_list = []
+closed_list = []
+len_locations = locations.length
+
+
+for (i = 0; i < len_locations; i++):
+    next_location = i + 1
+
+    distances = []
+
+    if (next_location < len_locations):
+        for (j = i + 1; j < len_locations):
+            distances.push({ id: i, value: locations[i].getDistance(locations[j])})
+
+            if (distances.length > 0) {
+                check_if_distance_is_shorter();
+            }
+
+
+
+    
